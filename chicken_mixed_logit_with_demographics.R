@@ -3,7 +3,7 @@
 .libPaths("rlib")
 library(Rchoice)
 
-dat <- read.csv(file = "chicken.csv", header = TRUE, sep = ",")
+dat <- read.csv(file = "protein/chicken.csv", header = TRUE, sep = ",")
 
 mixLogit_demo_Blogit <- Rchoice(selected_n ~0 
                                 + buyno
@@ -64,4 +64,6 @@ mixLogit_demo_Blogit <- Rchoice(selected_n ~0
                    family = binomial('logit'),
                    ranp = c(certified = 'n', fresh = 'n', farmed = 'n',  p_fish ='n',  p_beef = 'n', o_local = 'n', o_usa ='n' ),
                    R = 500,  panel = TRUE,index ='personid', print.init = TRUE)
+
+sink(commandArgs(trailingOnly = TRUE)[1])
 summary(mixLogit_demo_Blogit)
