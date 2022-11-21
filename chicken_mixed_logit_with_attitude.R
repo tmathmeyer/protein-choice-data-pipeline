@@ -1,7 +1,7 @@
 .libPaths("rlib")
 library(Rchoice)
 
-dat <- read.csv(file = "chicken.csv", header = TRUE, sep = ",")
+dat <- read.csv(file = "protein/chicken.csv", header = TRUE, sep = ",")
 
 mixl_att_Rc <- Rchoice(selected_n ~ 0 
                        + buyno

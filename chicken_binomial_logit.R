@@ -3,7 +3,7 @@
 library(Rchoice)
 
 dat <- read.csv(
-  file = "chicken.csv",
+  file = "protein/chicken.csv",
   header = TRUE, 
   sep = ",")
 
