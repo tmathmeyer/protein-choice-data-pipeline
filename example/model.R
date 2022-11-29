@@ -1,8 +1,6 @@
 .libPaths("rlib")
 
 library(Rchoice)
-library(fs)
-dir_tree(path = "protein", recurse = FALSE)
 
 dat <- read.csv(
   file = "protein/chicken.csv",
