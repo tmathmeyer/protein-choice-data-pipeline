@@ -31,7 +31,7 @@ mixl_basic_Blogit <- Rchoice(selected_n ~ 0 + buyno
                              print.init = FALSE,
                              data = dat,
                              family = binomial('logit'),
-                             ranp = c(certified = 'n', fresh = 'n', farmed = 'n',  p_fish ='n',  p_beef = 'n', o_local = 'n', o_usa ='n' ))
+                             ranp = c(certified = 'n', fresh = 'n', farmed = 'n',  p_trout ='n', p_yellowtail='n', p_whitefish='n',  p_beef = 'n', o_local = 'n', o_usa ='n' ))
 
 
 sink(commandArgs(trailingOnly = TRUE)[1])
