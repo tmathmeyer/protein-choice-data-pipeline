@@ -3,7 +3,7 @@
 library(Rchoice)
 
 dat <- read.csv(
-  file = "/Users/minyanshen/Desktop/survey/data/all_data/final_farmedvaribal_chicken.csv",
+  file = "protein/chicken.csv",
   header = TRUE, 
   sep = ",")
 
@@ -40,11 +40,3 @@ mixl_basic_Blogit <- Rchoice(
 
 sink(commandArgs(trailingOnly = TRUE)[1])
 summary(mixl_basic_Blogit)
-
-
-
-
-
-
-#ranp = c(certified = 'n', fresh = 'n', farmed = 'n',  p_fish ='n',  p_beef = 'n', o_local = 'n', o_usa ='n' ),
-#R = 500,  panel = TRUE,index ='personid', print.init = TRUE)
