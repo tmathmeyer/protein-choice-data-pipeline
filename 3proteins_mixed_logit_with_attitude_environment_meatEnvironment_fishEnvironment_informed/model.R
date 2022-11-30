@@ -59,3 +59,4 @@ mixl_basic_Blogit <- Rchoice(
 
 sink(commandArgs(trailingOnly = TRUE)[1])
 summary(mixl_basic_Blogit)
+ 
