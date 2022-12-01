@@ -5,3 +5,10 @@ data (
     "chicken.csv",
   ],
 )
+
+upload (
+  name = "models",
+  deps = [
+    ":chicken",
+  ],
+)
