@@ -7,6 +7,9 @@ dat <- read.csv(
   file = "protein/chicken.csv",
   header = TRUE, sep = ",")
 
+sink(commandArgs(trailingOnly = TRUE)[1])
+
+if (FALSE) {
 mixLogit_demo_Blogit <- Rchoice(
   selected_n ~0
   + buyno
@@ -72,5 +75,7 @@ mixLogit_demo_Blogit <- Rchoice(
     o_local = 'n',
     o_usa ='n'))
 
-sink(commandArgs(trailingOnly = TRUE)[1])
 summary(mixLogit_demo_Blogit)
+} else {
+print("invalid model")
+}
