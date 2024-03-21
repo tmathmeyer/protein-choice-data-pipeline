@@ -1,9 +1,6 @@
-
 data (
   name = "chicken",
-  srcs = [
-    "chicken.csv",
-  ],
+  srcs = [ "chicken.csv" ],
 )
 
 upload (
