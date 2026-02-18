@@ -1,5 +1,3 @@
-langs("R")
-
 r_process_data (
   name = "model",
   srcs = [ "model.R" ],
